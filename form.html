@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Student Registration Form</title>
+ <link rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <style>
+ .form-container {
+ max-width: 500px;
+ margin: 0 auto;
+ padding: 20px;
+ border: 1px solid #850c0c;
+ border-radius: 5px;
+ box-shadow: 0 0 10px rgba(71, 61, 61, 0.2);
+ background-color: #f0d4d4; /* Light gray background color */
+ }
+ /* Text color for labels */
+ .form-group label {
+ color: #470303; /* Dark gray text color */
+ }
+ /* Text color for checkboxes and radio buttons */
+ .form-check-label {
+ color: #6ec280; /* Dark gray text color */
+ }
+ /* Background color for checkboxes and radio buttons */
+ .form-check-input:checked + .form-check-label::before {
+ background-color: #ce135e; /* Blue background color for checked items */
+ border-color: #e48c8c; /* Blue border color for checked items */
+ }
+ /* Background color for the submit button */
+ .btn-primary {
+ background-color: #e2ddef; /* Blue background color for the button */
+ border-color: #1d035b; /* Blue border color for the button */
+ color:#1d035b; /* White text color for the button */
+ }
+ /* Hover effect for the submit button */
+ .btn-primary:hover {
+ background-color: #63b9a2; /* Darker blue background color on hover */
+ border-color: #026b48; /* Darker blue border color on hover */
+ }
+ </style>
+</head>
+<body>
+ <div class="container">
+ <div class="form-container">
+ <h2 style="color: #560101;">Student Registration Form</h2>
+ <form>
+ <div class="form-group">
+ <label for="name">Name:</label>
+ <input type="text" class="form-control" id="name" placeholder="Enter
+your name" required>
+ </div>
+ <div class="form-group">
+ <label for="email">Email:</label>
+ <input type="email" class="form-control" id="email" placeholder="Enter
+your email" required>
+ </div>
+ <div class="form-group">
+ <label for="gender">Gender:</label>
+ <div class="form-check">
+ <input class="form-check-input" type="radio" name="gender"
+id="male" value="male" required>
+ <label class="form-check-label" for="male">Male</label>
+ </div>
+ <div class="form-check">
+ <input class="form-check-input" type="radio" name="gender"
+id="female" value="female" required>
+ <label class="form-check-label" for="female">Female</label>
+ </div>
+ </div>
+ <div class="form-group">
+ <label for="courses">Select Branch:</label>
+ <div class="form-check">
+ <input class="form-check-input" type="checkbox" id="it"
+value="Information Technology">
+ <label class="form-check-label" for="it">Information
+Technology</label>
+ </div>
+ <div class="form-check">
+ <input class="form-check-input" type="checkbox" id="computer
+science" value="Computer Science">
+ <label class="form-check-label" for="computer science"> Computer
+Science</label>
+ </div>
+ <div class="form-check">
+ <input class="form-check-input" type="checkbox" id="electronics"
+value="Electronics">
+ <label class="form-check-label" for="electronics">Electronics</label>
+ </div>
+ </div>
+ <button type="submit" class="btn btn-primary">Submit</button>
+ </form>
+ </div>
+ </div>
+</body>
+</html>
