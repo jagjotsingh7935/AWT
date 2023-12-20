@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Bootstrap Breakpoints Example</title>
+ <!-- Link to Bootstrap CSS -->
+ <link rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <style>
+ /* Custom CSS for different breakpoints */
+ /* Extra Small (xs) */
+ .bg-xs {
+ background-color: #cf7878;
+ }
+ .text-xs {
+ font-size: 14px;
+ }
+ /* Small (sm) */
+ @media (min-width: 576px) {
+ .bg-sm {
+ background-color: #e1f18b;
+ }
+ .text-sm {
+ font-size: 16px;
+ }
+ }
+ /* Medium (md) */
+ @media (min-width: 768px) {
+ .bg-md {
+ background-color: #59b8de;
+ }
+ .text-md {
+ font-size: 18px;
+ }
+ }
+ /* Large (lg) */
+ @media (min-width: 992px) {
+ .bg-lg {
+ background-color: #ed85c5;
+ }
+ .text-lg {
+ font-size: 20px;
+ }
+ }
+ /* Extra Large (xl) */
+ @media (min-width: 1200px) {
+ .bg-xl {
+ background-color: #80e39e;
+ }
+ .text-xl {
+ font-size: 22px;
+ }
+ }
+ </style>
+</head>
+<body>
+ <div class="container">
+ <h1 class="text-center">Bootstrap Breakpoints Example</h1>
+ <div class="row">
+ <div class="col bg-xs text-xs">
+ Extra Small (xs) <576px
+ </div>
+ <div class="col bg-sm text-sm">
+ Small (sm) ≥576px
+ </div>
+ <div class="col bg-md text-md">
+ Medium (md) ≥768px
+ </div>
+ <div class="col bg-lg text-lg">
+ Large (lg) ≥992px
+ </div>
+ <div class="col bg-xl text-xl">
+ Extra Large (xl) ≥1400px
+ </div>
+ </div>
+ </div>
+</body>
+</html>
